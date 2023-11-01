@@ -1,0 +1,30 @@
+
+<h1>{{imie}}</h1>
+
+<dl>
+  <dt>Imię: </dt>
+  <dd>{{imie}}</dd>
+
+  <dt>Wiek: </dt>
+  <dd>{{wiek}}</dd>
+
+  <dt>Metoda: </dt>
+  <dd>{{bohaterInfo()}}</dd>
+
+  <dt>Wielką literą: </dt>
+  <dd>{{wielkaLitera}}</dd>
+</dl>
+
+<button
+  class="btn btn-primary mx-2"
+  (click)="zmienImie()" *ngIf="imie !== 'Spiderman'"
+>Zmień imię</button>
+<button
+  class="btn btn-primary mx-2"
+  (click)="zmienWiek()" *ngIf="wiek !==45"
+>Zmień wiek</button>
+
+<button
+  class="btn btn-primary"
+  (click)="resetForm()"
+>Reset</button>

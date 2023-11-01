@@ -1,0 +1,16 @@
+<h3>Lista bohaterów</h3>
+<div *ngIf="usunietyBohater; else nicUsuniete">
+  <h3>Usuniety bohater: <small class="text-danger">{{usunietyBohater}}</small></h3>
+</div>
+
+<ng-template #nicUsuniete>
+  <h3 *ngIf="!usunietyBohater">Nic nie usunięto</h3>
+</ng-template>
+
+
+<button *ngIf="imieBohaterow.length > 0" (click)="usunBohatera()" class="btn btn-outline-danger">Usuń ostatniego bohatera</button>
+
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let imie of imieBohaterow" class="list-group-item">{{imie}}</li>
+</ul>
