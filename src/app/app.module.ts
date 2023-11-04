@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {BohaterowieModule} from "./bohaterowie/bohaterowie.module";
+import {DbzModule} from "./dbz/dbz.module";
 
 
 
@@ -12,7 +13,8 @@ import {BohaterowieModule} from "./bohaterowie/bohaterowie.module";
   ],
   imports: [
     BrowserModule,
-    BohaterowieModule
+    BohaterowieModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
