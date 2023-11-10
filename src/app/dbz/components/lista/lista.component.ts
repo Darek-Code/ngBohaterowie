@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Profile} from "../../interfaces/profil.interface";
 
 @Component({
   selector: 'dbz-lista',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista.component.css']
 })
 export class ListaComponent {
-
+  @Input()
+  public listaProfile: Profile[] = [{
+    imie: 'Trunks',
+    moc: 10
+  }]
 }
