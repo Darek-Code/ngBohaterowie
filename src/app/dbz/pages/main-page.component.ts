@@ -18,6 +18,10 @@ export class MainPageComponent {
     {
       imie: 'Vegeta',
       moc: 9500
+    },
+    {
+      imie: 'Freezer',
+      moc: 1550
     }
   ]
 }

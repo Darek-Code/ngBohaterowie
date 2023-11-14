@@ -8,7 +8,9 @@
   let isEven = even;
   let isOdd = odd;
 "
-    class="list-group-item">
+    class="list-group-item"
+      [ngClass]="{ 'list-group-item-warning' : isEven,
+       'list-group-item-info': isOdd}">
     <span class="text-primary">{{ i + 1 }}</span>
     <span> Bohater: {{profile.imie}}</span> - <strong>Moc:</strong> <span>{{profile.moc}}</span>
   </li>
