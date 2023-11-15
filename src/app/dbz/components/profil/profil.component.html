@@ -1,6 +1,18 @@
 <h4>Dodaj postać</h4>
 <form class="row">
-  <input type="text" class="form-control mb-2" placeholder="Nazwa">
-  <input type="number" class="form-control mb-2" placeholder="Moc">
-  <button type="submit" class="btn btn-primary">Dodaj</button>
+  <input type="text"
+         [(ngModel)]="profil.imie"
+         name="imie"
+         class="form-control mb-2"
+         placeholder="Nazwa">
+
+  <input type="number"
+         [(ngModel)]="profil.moc"
+         name="moc"
+         class="form-control mb-2"
+         placeholder="Moc">
+
+  <button type="submit" class="btn btn-primary" (click)="emitProfil()">Dodaj</button>
+
+  <pre>{{ profil | json }}</pre>
 </form>
